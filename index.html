@@ -10,7 +10,7 @@
 
     <body>
         <div class="fundo">
-            <h1>Criado por Guilherme</h1>
+            <h1>Criado por João Pedro</h1>
             <div class="Calculadora">
                 <h1>Calculadora</h1>
                 <p id="resultado"></p>
@@ -46,11 +46,34 @@
                 </table>
             </div>
         </div>
+        <script>
+            function insert (num) 
+            {
+                var numero = document.getElementById(resultado).innerHTML;
+                document.getElementById(resultado).innerHTML=numero+num;
+            }
+            function clean ()
+            {
+                document.getElementById(resultado).innerHTML="";
+            }
+            function back ()
+            {
+                var numero = document.getElementById(resultado).innerHTML
+                document.getElementById(resultado).innerHTML=resultado.substring (0, resultado.length -1);
+            }
+            function calcular ()
+            {
+                var numero = document.getElementById(resultado).innerHTML;
+                if (resultado) 
+                {
+                    document.getElementById(resultado).innerHTML=eval(resultado);
+                }
+                else (resultado) 
+                {
+                    document.getElementById(resultado).innerHTML= "nada para Calcular"
+                }
+            }
+            </script>
+
     </body>
 </html>
-<script>
-    function insert (num)
-    {
-        var numero = document.getElementById("resultado")
-    }
-</script>
